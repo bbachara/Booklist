@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- jsPDF Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <!-- jsPDF AutoTable Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.23/jspdf.plugin.autotable.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Booklist</h1>
+      <!-- Book Form -->
+      <form action="" id="bookForm" class="needs-validation" novalidate>
+        <div class="mb-1">
+          <label for="bookTitle" class="form-label">Title</label>
+          <input
+            type="text"
+            required
+            id="bookTitle"
+            placeholder="Enter book title"
+            class="form-control"
+          />
+        </div>
+
+        <div class="mb-1">
+          <label for="bookAuthor" class="form-label">Author</label>
+          <input
+            type="text"
+            required
+            id="bookAuthor"
+            placeholder="Enter author's name"
+            class="form-control"
+          />
+        </div>
+
+        <div>
+          <button id="saveButton" class="btn btn-primary mb-1">Save</button>
+        </div>
+      </form>
+
+      <!-- Dark Mode Toggle -->
+      <button id="darkModeToggle" class="btn btn-dark">Toggle Dark Mode</button>
+
+      <!-- Sorting and Search -->
+      <div class="mb-2">
+        <button id="sortTitle" class="btn btn-info">Sort by Title</button>
+        <button id="sortAuthor" class="btn btn-info">Sort by Author</button>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search by Title or Author"
+          class="form-control"
+        />
+      </div>
+
+      <!-- Book Table -->
+      <table id="booksTable" class="table table-striped mt-1">
+        <thead>
+          <tr>
+            <td>Title</td>
+            <td>Author</td>
+            <td>Actions</td>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <!-- Pagination -->
+      <div id="pagination"></div>
+
+      <!-- Export Buttons -->
+      <button id="exportCSV" class="btn btn-secondary">Export to CSV</button>
+      <button id="exportPDF" class="btn btn-secondary">Export to PDF</button>
+    </div>
+
+    <script src="booklist.js"></script>
+  </body>
+</html>

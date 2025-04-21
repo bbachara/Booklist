@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  background-color: #f8f9f1;
+  color: #212529;
+}
+
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  border: 1px solid #dee2e6;
+  vertical-align: middle;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+  background-color: lightgray;
+}
+
+.needs-validation {
+  margin-top: 1rem;
+}
+
+.was-validated {
+  margin-top: 1rem;
+}
+
+input:invalid {
+  border-color: #dc3545;
+}
+
+/* Add styles for the drag handle */
+td .drag-handle {
+  cursor: move;
+  font-size: 18px;
+  color: #007bff;
+}
+
+td .drag-handle i {
+  font-size: 1.2rem;
+}
+
+/* Dark mode */
+.dark {
+  background-color: #212529;
+  color: #f8f9f1;
+}
+
+.dark .container {
+  background-color: #343a40;
+}
+
+.dark .btn-primary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.dark .table th,
+.dark .table td {
+  border-color: #495057;
+}
+
+.dark .btn-danger {
+  background-color: #c82333;
+}
+
+.dark .btn-secondary {
+  background-color: #5a6268;
+}
+
+.dark .btn-primary:hover {
+  background-color: #5a6268;
+}
+
+/* Dark Mode for Pagination Buttons */
+.dark .page-link {
+  color: #f8f9f1;
+  background-color: #343a40;
+  border-color: #495057;
+}
+
+.dark .page-link:hover {
+  background-color: #5a6268;
+}
+
+.dark .page-link.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.dark .table-striped tbody tr:nth-child(odd) {
+  background-color: lightgray;
+  color: black;
+}
+
+/* Styles for Pagination */
+#pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.page-link {
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.page-link:hover {
+  background-color: #f1f1f1;
+}
+
+.page-link.active {
+  background-color: #007bff;
+  color: #fff;
+}
